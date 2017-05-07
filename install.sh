@@ -44,11 +44,11 @@ cp ourceCodePro+Powerline+Awesome+Regular.ttf /usr/share/fonts/truetype/
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-cp plugins.vim.txt ~/.vim/bundle/plugins.vim
+cp dotfiles/plugins.vim.txt ~/.vim/bundle/plugins.vim
 
-cp vimrc.txt ~/.vimrc
-cp tmux.conf.txt ~/.tmux.conf
-cp bashrc.txt ~/.bashrc
+cp dotfiles/vimrc.txt ~/.vimrc
+cp dotfiles/tmux.conf.txt ~/.tmux.conf
+cp dotfiles/bashrc.txt ~/.bashrc
 
 # Installing Oh My Zsh
 
@@ -59,7 +59,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 cd ~/.oh-my-zsh/custom
 git clone https://github.com/bhilburn/powerlevel9k.git themes/powerlevel9k
 cd - 
-cp  zsh ~/.zshrc
+cp  dotfiles/zshrc ~/.zshrc
 
 # Installing Fonts
 cd ~
