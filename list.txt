@@ -17,3 +17,5 @@ curl
 python-software-properties
 shellcheck 
 idle
+idle3
+

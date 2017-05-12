@@ -1,8 +1,0 @@
-
-Enter chrome and first time it will aske for key enterence just press enter and second time it will not aske for it.
-
-Go in to vim and type following: :PluginInstall 
-
-For ssh  do  following in terminal: ssh-keygen 
-
-Run Two font file inorder to appear cool icones fontawesome-regular.ttf and  FontAwesome.otf  

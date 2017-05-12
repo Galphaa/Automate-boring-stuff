@@ -1,0 +1,77 @@
+# Installing ATOM.
+
+cd
+mkdir .installs
+cd .installs
+wget https://atom.io/download/deb
+dpkg -i deb
+apt-get -y update
+
+
+# Installing synergy 1.8.8 
+
+wget http://archive.getdeb.net/ubuntu/pool/apps/s/synergy/synergy_1.8.8-1~getdeb1_amd64.deb
+dpkg -i synergy_1.8.8-1~getdeb1_amd64.deb
+apt-get -f install -y
+
+
+# Installing Oh My Zsh
+
+apt-get install zsh
+
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+cd ~/.oh-my-zsh/custom
+git clone https://github.com/bhilburn/powerlevel9k.git themes/powerlevel9k
+cd -
+cp  dotfiles/zshrc ~/.zshrc
+
+# Installing Fonts
+
+cd ~
+git clone https://github.com/powerline/fonts
+cd fonts
+./install.sh
+
+# cleaning 
+
+cd ~
+rm -r fonts
+
+# Need to be installed 
+
+apt-get install ubuntu-restricted-extras
+
+# Disable Chrome annoying keyloging after this command once will be requested.
+
+rm ~/.local/share/keyrings/*
+
+
+# VIM
+
+activate vim plugins we need to start vim and then type :PluginInstall
+
+
+#######################################################################
+
+
+Enter chrome and first time it will aske for key enterence just press enter and second time it will not aske for it.
+
+Go in to vim and type following: :PluginInstall 
+
+For ssh  do  following in terminal: ssh-keygen 
+
+Run Two font file inorder to appear cool icones fontawesome-regular.ttf and  FontAwesome.otf
+
+
+Go to Driver settings and apply for normal drivers not generics one.
+
+Changing terminal appearance 
+
+Home terminal back ground #28031C #001E6A(Blue)
+
+Cloud 0 terminal background #2F08F9
+
+Laptop terminal backround #17347D
+
+New color #00327D
