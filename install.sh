@@ -1,17 +1,23 @@
 #!/bin/bash 
 
-apt-get -y update && apt-get -y upgrade > /dev/null 2>&1
+apt-get -y update  > /dev/null 2>&1
+
+apt-get -y upgrade > /dev/null 2>&1
+
 
 # Installing all files needed for first usage.
 
 cat list.txt | xargs apt-get -y install   
 
-apt-get -y update && apt-get -y upgrade > /dev/null 2>&1
+apt-get -y update > /dev/null 2>&1
+
+apt-get -y upgrade > /dev/null 2>&1
 
 # Installing repo and then installing pulseaudio-equalizer for more easy control for audio system.
 
 add-apt-repository -y ppa:nilarimogard/webupd8 
-apt-get update
+
+apt-get update > /dev/null 2>&1
 apt-get install pulseaudio-equalizer
 
 # Putting font forrome and first time it will aske for key enterence just press enter and second time it will not aske for it.
