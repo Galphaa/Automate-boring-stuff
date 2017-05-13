@@ -1,12 +1,12 @@
 #!/bin/bash 
 
-apt-get -y update && apt-get -y upgrade 
+apt-get -y update && apt-get -y upgrade > /dev/null 2>&1
 
 # Installing all files needed for first usage.
 
 cat list.txt | xargs apt-get -y install   
 
-apt-get -y update && apt-get -y upgrade 
+apt-get -y update && apt-get -y upgrade > /dev/null 2>&1
 
 # Installing repo and then installing pulseaudio-equalizer for more easy control for audio system.
 
@@ -35,3 +35,4 @@ apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 
+cat to_do_list.txt 
