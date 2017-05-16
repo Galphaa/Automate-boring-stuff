@@ -19,3 +19,6 @@ shellcheck
 idle
 idle3
 
+libxss1
+libappindicator1
+libindicator7
