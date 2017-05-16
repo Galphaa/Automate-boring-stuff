@@ -17,7 +17,7 @@ apt-get -y upgrade > /dev/null 2>&1
 
 add-apt-repository -y ppa:nilarimogard/webupd8 
 
-apt-get update > /dev/null 2>&1
+apt-get -y update > /dev/null 2>&1
 apt-get install pulseaudio-equalizer
 
 # Putting font forrome and first time it will aske for key enterence just press enter and second time it will not aske for it.
@@ -37,7 +37,7 @@ cp dotfiles/bashrc.txt ~/.bashrc
 
 # Installing Google chrome
 
-apt-get install libxss1 libappindicator1 libindicator7
+apt-get -y install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 
