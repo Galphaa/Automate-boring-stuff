@@ -2,7 +2,7 @@
 
  After excution of script you manually have to install programs in file to_do_list
 
-Contents Of Prorgrams 
+# Contents Of Prorgrams 
 -----------------
 
 
@@ -29,4 +29,13 @@ Contents Of Prorgrams
     libxss1
     libappindicator1
     libindicator7
-
+  
+## Manually installing 
+    Atom 
+    synergy 
+    zsh 
+    Oh My Zsh
+    Fonts(for zshell )
+    ubuntu-restricted-extras
+ 
+    Some Linux Enviroment Customisation 
