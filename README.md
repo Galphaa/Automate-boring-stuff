@@ -1,5 +1,7 @@
 # Automate-boring-stuff
 
+ after excution of script you manually have to install programs in file to_do_list
+
 Contents Of Prorgrams 
 -----------------
 
