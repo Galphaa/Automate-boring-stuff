@@ -3,7 +3,8 @@
 Table of Contents
 -----------------
 
-preload 
+    ```
+     preload 
 vim
 mc
 tmux
@@ -26,3 +27,5 @@ idle3
 libxss1
 libappindicator1
 libindicator7
+
+    ```
