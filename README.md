@@ -4,8 +4,8 @@ Table of Contents
 -----------------
 
     ```
-     preload 
-vim
+    preload 
+    vim
 mc
 tmux
 unzip
