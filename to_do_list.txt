@@ -20,14 +20,14 @@ apt-get -f install -y
 
 # Installing Oh My Zsh
 
-apt-get install zsh
+apt-get -y install zsh
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 cd ~/.oh-my-zsh/custom
 git clone https://github.com/bhilburn/powerlevel9k.git themes/powerlevel9k
 cd -
-cp  dotfiles/zshrc ~/.zshrc
+cp git/Automate-boring-stuff/dotfiles/zshrc ~/.zshrc
 
 # Installing Fonts
 
