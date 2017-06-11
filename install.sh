@@ -18,7 +18,7 @@ apt-get -y upgrade > /dev/null 2>&1
 add-apt-repository -y ppa:nilarimogard/webupd8 
 
 apt-get -y update > /dev/null 2>&1
-apt-get install pulseaudio-equalizer
+apt-get -y install pulseaudio-equalizer
 
 # Putting font forrome and first time it will aske for key enterence just press enter and second time it will not aske for it.
 
