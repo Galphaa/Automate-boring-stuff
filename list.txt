@@ -15,6 +15,7 @@ python-pip
 tree
 curl
 python-software-properties
+google-chrome-stable
 shellcheck 
 idle
 idle3
