@@ -20,7 +20,7 @@ cd $CURRENT_DIR
 
 
 # Installing all files needed for first usage.
-cat list.txt | xargs apt-get -y install > /dev/null 2>&1  
+cat list.txt | xargs apt-get -y install   
 apt-get -y update > /dev/null 2>&1
 apt-get -y upgrade > /dev/null 2>&1
 
