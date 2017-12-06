@@ -34,3 +34,4 @@ libavcodec-ffmpeg-extra56
 libk3b6-extracodecs
 oxideqt-codecs-extra
 unrar
+dstat
