@@ -3,10 +3,13 @@
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 WORKING_DIR=`mktemp -d -p /tmp`
 
+function update_upgrade{
+apt-get -y -qq update  
+apt-get -y -qq upgrade 
+}
 
 # Prepearing 
-apt-get -y update  > /dev/null 2>&1
-apt-get -y upgrade > /dev/null 2>&1
+update_upgrade
 
 # Installing Google chrome repository
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -20,14 +23,12 @@ cd $CURRENT_DIR
 
 
 # Installing all files needed for first usage.
-cat list.txt | xargs apt-get -y install   
-apt-get -y update > /dev/null 2>&1
-apt-get -y upgrade > /dev/null 2>&1
+cat list.txt | xargs apt-get -y -qq install   
+update_upgrade
 
 # Installing repo and then installing pulseaudio-equalizer for more easy control for audio system.
 add-apt-repository -y ppa:nilarimogard/webupd8 
-apt-get -y update > /dev/null 2>&1
-apt-get -y install pulseaudio-equalizer
+apt-get -y -qq install pulseaudio-equalizer
 
 # Putting font forrome and first time it will aske for key enterence just press enter and second time it will not aske for it.
 cp .files/SourceCodePro+Powerline+Awesome+Regular.ttf /usr/share/fonts/truetype/
@@ -40,5 +41,6 @@ cp $WORKING_DIR/dotfiles/tmux.conf.txt ~/.tmux.conf
 cp $WORKING_DIR/dotfiles/bashrc.txt ~/.bashrc
 cp $WORKING_DIR/dotfiles/config_1 ~/.config/tilda/config_0
 
+update_upgrade
 clear
 cat to_do_list.txt 
