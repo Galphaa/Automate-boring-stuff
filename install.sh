@@ -46,4 +46,5 @@ clear
 
 printf "%*s" $(tput cols) | tr " " "="
 
+cat to_do_list.txt 
 
