@@ -43,4 +43,7 @@ cp $WORKING_DIR/dotfiles/config_1 ~/.config/tilda/config_0
 
 update_upgrade
 clear
-cat to_do_list.txt 
+
+printf "%*s" $(tput cols) | tr " " "="
+
+
