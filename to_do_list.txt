@@ -9,11 +9,17 @@ dpkg -i deb
 apt-get -y update
 
 
+#######################################################################
+
+
 # Installing synergy 1.8.8 
 
 wget http://archive.getdeb.net/ubuntu/pool/apps/s/synergy/synergy_1.8.8-1~getdeb1_amd64.deb
 dpkg -i synergy_1.8.8-1~getdeb1_amd64.deb
 apt-get -f install -y
+
+
+#######################################################################
 
 
 # Installing Oh My Zsh
@@ -34,14 +40,26 @@ git clone https://github.com/powerline/fonts
 cd fonts
 ./install.sh
 
+
+#######################################################################
+
+
 # cleaning 
 
 cd ~
 rm -r fonts
 
+
+#######################################################################
+
+
 # Need to be installed 
 
 apt-get install ubuntu-restricted-extras
+
+
+#######################################################################
+
 
 # Disable Chrome annoying keyloging after this command once will be requested.
 
