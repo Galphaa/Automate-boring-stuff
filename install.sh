@@ -3,7 +3,7 @@
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 WORKING_DIR=`mktemp -d -p /tmp`
 
-function update_upgrade{
+function update_upgrade {
 apt-get -y -qq update  
 apt-get -y -qq upgrade 
 }
