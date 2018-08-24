@@ -3,6 +3,7 @@ vim
 mc
 tmux
 unzip
+meld
 git
 wget
 tilda 
