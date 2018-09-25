@@ -15,8 +15,7 @@ openssh-server
 python-pip
 tree
 curl
-python-software-properties
-google-chrome-stable
+software-properties-common
 shellcheck 
 idle
 idle3
