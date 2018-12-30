@@ -11,6 +11,7 @@ vlc
 htop
 lm-sensors
 firefox
+chrome-gnome-shell
 openssh-server
 python-pip
 tree
