@@ -17,6 +17,7 @@ python-pip
 tree
 curl
 software-properties-common
+ gnome-shell-extensions
 shellcheck 
 idle
 idle3
