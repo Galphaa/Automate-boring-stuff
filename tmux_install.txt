@@ -13,9 +13,9 @@ sudo make install
 cd ..
 
 # DOWNLOAD SOURCES FOR TMUX AND MAKE AND INSTALL
-curl -OL https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz
-tar -xvzf tmux-2.3.tar.gz
-cd tmux-2.3
+curl -OL https://codeload.github.com/tmux/tmux/tar.gz/3.0
+tar -xvzf 3.0
+cd tmux-.30
 LDFLAGS="-L/usr/local/lib -Wl,-rpath=/usr/local/lib" ./configure --prefix=/usr/local
 make
 sudo make install
