@@ -15,7 +15,7 @@ cd ..
 # DOWNLOAD SOURCES FOR TMUX AND MAKE AND INSTALL
 curl -OL https://codeload.github.com/tmux/tmux/tar.gz/3.0
 tar -xvzf 3.0
-cd tmux-.30
+cd 30
 LDFLAGS="-L/usr/local/lib -Wl,-rpath=/usr/local/lib" ./configure --prefix=/usr/local
 make
 sudo make install
