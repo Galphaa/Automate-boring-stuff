@@ -34,7 +34,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp $WORKING_DIR/dotfiles/plugins.vim.txt ~/.vim/bundle/plugins.vim
 cp $WORKING_DIR/dotfiles/vimrc.txt ~/.vimrc
 cp $WORKING_DIR/dotfiles/tmux.conf.txt ~/.tmux.conf
-cp $WORKING_DIR/dotfiles/bashrc.txt ~/.bashrc
+cp $WORKING_DIR/dotfiles/bashrc ~/.bashrc
 cp $WORKING_DIR/dotfiles/config_1 ~/.config/tilda/config_0
 
 update_upgrade
